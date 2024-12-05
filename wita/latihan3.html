@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN jQuery</title>
+</head>
+<body>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae hic sequi id fugit veniam perspiciatis obcaecati non illo, 
+        laboriosam esse quaerat vel cupiditate perferendis, aliquam distinctio natus iusto. Velit, cum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, tempora quaerat odit et rerum beatae recusandae aspernatur omnis vel quisquam adipisci magnam deserunt perspiciatis voluptates ea, incidunt eos. Nesciunt, cum Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe iste, cum libero dolorum inventore omnis eum quibusdam ut quisquam repudiandae quam doloribus. 
+        Culpa, minima consequuntur vero sit consequatur delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nam debitis in, distinctio est a possimus soluta minima molestiae nihil ipsam assumenda omnis fuga fugit, asperiores magni. Minus, voluptatibus doloremque!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim incidunt recusandae a maiores non cupiditate ullam illo expedita, error dolorum molestias sed officia deserunt accusamus quam quis rem explicabo!
+    </p>
+    <button id="viewTEXT">Tampilkan Text</button>
+    <button id="hideTEXT">Sembunyikan Text</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $( function(){
+            $('p').hide()
+            $('#hideTEXT').hide()
+            $("#viewTEXT").on('click',function(){
+                $('p').show(500)
+                $(this).hide()
+                $('#hideTEXT').show()
+            })
+            //tambahkan script untuk menyembunyikan text,
+            //tombol hidetext dan tampilkan kembali tombol tampilkan text
+        })
+        $( function(){
+            $("#hideTEXT").on('click',function(){
+                $('p').hide(500)
+                $(this).HIDE()
+                $('#hideTEXT').hide()
+            })
+    </script>
+</body>
+</html>
